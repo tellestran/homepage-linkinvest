@@ -234,10 +234,11 @@ body .search .search__tab {
   margin-right: 1rem;
   border: none;
   font-weight: semibold;
+  color: #ffffff;
 }
 body .search .search__tab--active {
   background-color: #ffffff;
-  color: #ffffff;
+  color: #000000;
 }
 body .search .search-container {
   width: 70%;
