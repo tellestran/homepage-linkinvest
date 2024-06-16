@@ -161,6 +161,7 @@ body .portfolio .slider__more {
   font-size: 1em;
   text-decoration: none;
   color: #1868b3;
+  font-weight: 500;
 }
 body .portfolio .swiper {
   width: 100%;
@@ -358,6 +359,7 @@ body .spotlight__tabs-more {
   color: #1868b3;
   font-size: 1.6rem;
   text-transform: uppercase;
+  font-weight: 500;
 }
 body .spotlight__main {
   display: grid;
@@ -434,7 +436,7 @@ body .spotlight__ads {
   align-items: flex-end;
 }
 body .spotlight__ads img {
-  width: 90%;
+  width: 100%;
 }
 body .location {
   display: flex;
