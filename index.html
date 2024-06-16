@@ -284,6 +284,19 @@
             </div>
 
     </section>
+    <section class="banner-1">
+        <div class="banner-1__content">
+            <a>Tìm hiểu ngay</a>
+            <div class="banner-1__text">
+                <p class="text1">Bất động sản</p>
+                <p class="text2">Linkinvest</p>
+            </div>
+        </div>
+        <div class="banner-1__img">
+            <img src="./assets/banner-1-img.png" alt="" class="">
+            <div class="overlay"></div>
+        </div>
+    </section>
     <section class="location">
         <div class="location__intro">
             <div class="icon">
@@ -375,7 +388,7 @@
                         <img src="./assets/knowledge-1.png" alt="Image 1">
                         <div class="knowledge__content">
                             <p class="knowledge__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                               
+
                             </p>
                             <p class="knowledge__time"><i class="fa-regular fa-calendar"></i>27/10/2024
                             </p>
@@ -594,7 +607,7 @@
         </div>
 
         <div class="statistics-item">
-            <div><img src="./assets/statistic-global.png" class="statistics-img" /></div>
+            <div><img src="./assets/statistic-global.png" /></div>
         </div>
 
         <div class="statistics-item statistics-detail">
@@ -859,7 +872,7 @@
 
             var swiper3 = new Swiper('.mySwiper3', {
                 slidesPerView: 6,
-                spaceBetween: 10,
+                spaceBetween: 5,
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
@@ -870,6 +883,21 @@
                 },
                 loop: true,
                 centeredSlides: true,
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 6,
+                        spaceBetween: 5
+                    },
+                    500: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 10
+                    },
+                    100: {
+                        slidesPerView: 1,
+                        spaceBetween: 10
+                    }
+                }
+
             });
 
             var swiper4 = new Swiper('.mySwiper4', {
@@ -893,7 +921,8 @@
                     500: {
                         slidesPerView: 1.5,
                         spaceBetween: 10
-                    }, 100: {
+                    },
+                    100: {
                         slidesPerView: 1,
                         spaceBetween: 10
                     }
@@ -911,12 +940,30 @@
             tabs.forEach(tab => {
                 tab.addEventListener('click', function () {
                     // Remove the active class from all tabs
-                    tabs.forEach(t => t.classList.remove('search__tab--active'));
+                    tabs.forEach(t => t.classList.remove('search__tab--active',));
 
                     // Add the active class to the clicked tab
                     this.classList.add('search__tab--active');
                 });
             });
+
+            const spotlight_tabs = document.querySelectorAll('.spotlight__tabs-element');
+
+            spotlight_tabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    // Remove the active class from all tabs
+                    spotlight_tabs.forEach(t => t.classList.remove('spotlight__tabs-element--active'));
+
+                    // Add the active class to the clicked tab
+                    this.classList.add('spotlight__tabs-element--active');
+                });
+            });
+
+
+
+
+
+
             const nav = document.querySelector('.nav');
             const navLogo = document.getElementById('nav-logo');
 
@@ -933,4 +980,4 @@
     </script>
 </body>
 
-</html>
+</html>Ï
