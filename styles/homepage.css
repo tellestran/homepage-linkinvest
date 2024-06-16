@@ -890,6 +890,12 @@ body .statistics .statistics-item h1 {
   font-size: 3.6rem;
   margin: 1.5rem 0;
 }
+body .statistics .statistics-item:nth-child(2) {
+  width: 40%;
+}
+body .statistics .statistics-item:nth-child(2) img {
+  width: 100%;
+}
 body .statistics .statistics-detail {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -904,7 +910,7 @@ body .statistics .statistics-detail .item-detail:first-child, body .statistics .
   border-left: 0.4rem solid #f7941d;
 }
 body .statistics .statistics-detail .item-detail h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
