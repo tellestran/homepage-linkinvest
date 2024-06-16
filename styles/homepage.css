@@ -29,6 +29,9 @@ body a {
   text-decoration: none;
   color: inherit;
 }
+body button {
+  cursor: pointer;
+}
 body .header {
   background-image: url("../assets/header.png");
   background-size: cover;
@@ -94,6 +97,10 @@ body .header .nav {
 body .header .nav__link {
   display: flex;
   align-items: center;
+  transition: all 0.3s;
+}
+body .header .nav__link :hover {
+  border-bottom: 2px solid #ffffff;
 }
 body .header .nav__link-element {
   margin: 0 1.2rem;
@@ -112,6 +119,9 @@ body .header .nav.scrolled {
 }
 body .header .nav.scrolled a {
   color: #06aeff;
+}
+body .header .nav.scrolled a:hover {
+  border-bottom: 2px solid #06aeff;
 }
 body .header__mobile {
   display: none;
@@ -142,10 +152,13 @@ body .portfolio .slider h2 {
 body .portfolio .slider__more a {
   color: black;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0 0 3.5rem 0;
   color: #1868b3;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 body .portfolio .slider a {
   align-items: center;
@@ -350,9 +363,11 @@ body .spotlight__tabs-elements {
 }
 body .spotlight__tabs-element {
   font-size: 2.4rem;
+  cursor: pointer;
 }
 body .spotlight__tabs-element--active {
   color: #004274;
+  font-weight: 700;
 }
 body .spotlight__tabs-more {
   text-decoration: none;
@@ -360,6 +375,8 @@ body .spotlight__tabs-more {
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 body .spotlight__main {
   display: grid;
@@ -434,9 +451,69 @@ body .spotlight__ads {
   flex-direction: column;
   gap: 2rem;
   align-items: flex-end;
+  justify-content: space-between;
 }
 body .spotlight__ads img {
   width: 100%;
+}
+body .banner-1 {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  height: 10rem;
+}
+body .banner-1__text {
+  margin: 0 1.5rem;
+  max-height: 90%;
+  color: white;
+}
+body .banner-1__text .text1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+body .banner-1__text .text2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.5rem;
+}
+body .banner-1__content {
+  display: flex;
+  text-transform: uppercase;
+  width: 40%;
+  background-color: #f7941d;
+  align-items: center;
+  padding-left: 2rem;
+}
+body .banner-1__content a {
+  height: 50%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  margin: 0 2rem 0 0;
+  display: flex;
+  align-items: center;
+}
+body .banner-1__img {
+  max-width: 60%;
+  position: relative;
+}
+body .banner-1__img img {
+  width: 100%;
+  height: 100%;
+}
+body .banner-1__img .overlay {
+  position: absolute;
+  background: linear-gradient(to right, #f7941d, transparent);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 body .location {
   display: flex;
@@ -450,6 +527,7 @@ body .location {
 body .location__intro {
   display: flex;
   flex-direction: column;
+  width: 25%;
 }
 body .location__intro .icon {
   width: 50px;
@@ -515,17 +593,20 @@ body .location__detail .p__nop {
   margin: 1rem 1rem 1rem 1.5rem;
   font-weight: 500;
 }
+body .location__detail:nth-child(4) {
+  margin-right: 0;
+}
 body .location .hanoi {
-  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../assets/location-1.png");
+  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../../public/assets/location-1.png");
 }
 body .location .hcm {
-  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../assets/location-2.png");
+  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../../public/assets/location-2.png");
 }
 body .location .danang {
-  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../assets/location-3.png");
+  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../../public/assets/location-3.png");
 }
 body .location .binhduong {
-  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../assets/location-4.png");
+  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../../public/assets/location-4.png");
 }
 body .location__swiper {
   width: 100%;
@@ -716,10 +797,13 @@ body .cooperate .slider .swiper {
   align-items: center;
 }
 body .cooperate .slider .swiper-wrapper {
-  padding-left: 35rem;
+  padding-left: 30.5rem;
 }
 body .cooperate .slider .swiper-slide {
   align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body .cooperate .slider .swiper-button-prev, body .cooperate .slider .swiper-button-next {
   color: #000;
