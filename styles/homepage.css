@@ -597,16 +597,16 @@ body .location__detail:nth-child(4) {
   margin-right: 0;
 }
 body .location .hanoi {
-  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../../public/assets/location-1.png");
+  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../assets/location-1.png");
 }
 body .location .hcm {
-  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../../public/assets/location-2.png");
+  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../assets/location-2.png");
 }
 body .location .danang {
-  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../../public/assets/location-3.png");
+  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../assets/location-3.png");
 }
 body .location .binhduong {
-  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../../public/assets/location-4.png");
+  background-image: linear-gradient(rgb(0, 66, 116), rgba(0, 66, 116, 0)), url("../assets/location-4.png");
 }
 body .location__swiper {
   width: 100%;
